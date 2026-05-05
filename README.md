@@ -1,35 +1,31 @@
-# Diagrams-as-Code (DaC) Engine
-A centralized, high-fidelity architecture diagram generation engine for Linux. This tool allows you to write Python scripts to generate AWS/On-Prem architecture diagrams and run them globally from any terminal directory.
+# Diagrams-as-Code Engine
 
-## 🚀 Quick Start (One-Click Setup)
-Clone this repo and run the setup script:
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Platform](https://img.shields.io/badge/platform-linux-lightgrey.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+A centralized environment for generating cloud architecture diagrams via Python. This engine provides a global `draw-dac` utility to render infrastructure-as-code visualizations from any system directory.
+
+## Installation
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x setup.sh && ./setup.sh
 ```
 
-## 🛠 Usage
-Create a Python diagram script (e.g., `audit_map.py`) and run it from anywhere:
+## Usage
+Execute any Python Diagram-as-Code (DaC) script globally:
 ```bash
-draw-dac audit_map.py
+draw-dac architecture.py
 ```
 
-## 🧹 Uninstallation
-If you need to remove the engine from your system:
+## Architecture
+- **Core Engine:** Isolated Python virtual environment in `~/.diagrams_engine`.
+- **Global Bridge:** Executable wrapper in `~/bin/draw-dac`.
+- **Backend:** Graphviz (System-level rendering).
+
+## Removal
 ```bash
-chmod +x uninstall.sh
-./uninstall.sh
+chmod +x uninstall.sh && ./uninstall.sh
 ```
-
-## 📂 Project Structure
-- `setup.sh`: Automates the installation of Graphviz, Python Venv, and the global `draw-dac` utility.
-- `draw-dac`: The wrapper script that bridges your local folder to the centralized engine.
-- `.diagrams_engine/`: (Created during setup) Holds the isolated environment.
-
-## 📦 Dependencies
-- Python 3.10+
-- Graphviz (System)
-- Diagrams (Python Library)
 
 ---
-*Created for the SAAFIR Infrastructure Audit Project - May 2026*
+*Maintained by Jatri Infrastructure Team*
