@@ -6,7 +6,6 @@
 ![Engine](https://img.shields.io/badge/engine-graphviz-blueviolet.svg)
 ![Tool](https://img.shields.io/badge/tool-python--diagrams-orange.svg)
 ![Design](https://img.shields.io/badge/design-infrastructure--as--code-ff69b4.svg)
-![Maintained](https://img.shields.io/badge/maintained-yes-success.svg)
 
 A centralized environment for generating cloud architecture diagrams via Python. This engine provides a global `draw-dac` utility to render infrastructure-as-code visualizations from any system directory.
 
