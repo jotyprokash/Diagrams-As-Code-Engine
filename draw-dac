@@ -1,0 +1,11 @@
+#!/bin/bash
+# Global Wrapper for Diagrams-as-Code
+if [ -z "$1" ]; then
+    echo "Usage: draw-dac <filename.py>"
+    exit 1
+fi
+
+# Use the centralized engine environment
+source ~/.diagrams_engine/venv/bin/activate
+python3 "$1"
+deactivate
